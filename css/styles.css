@@ -199,6 +199,28 @@ PENDULUM STYLES
 		justify-content: center;
 	}
 
+.pendulum--1 {
+	margin-top: 3rem;
+}
+
+/*************************************  
+IMAGES STYLES  
+**************************************/
+.images {
+	width: 90%;
+	margin-top: 5rem;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	max-width: 50rem;
+}
+
+.images img {
+	width: 47%;
+	border-radius: 12px;
+	margin-bottom: 1.5rem;
+}
+
 /*************************************  
 MEDIA STYLES  
 **************************************/
@@ -238,6 +260,14 @@ MEDIA STYLES
 		flex-direction: row;
 		justify-content: space-evenly;
 	}
+
+	.images {
+		max-width: 50rem;
+	}
+	
+	.images img {
+		width: 23%;
+	}
 }
 
 @media (min-width: 1250px) { 
@@ -275,4 +305,12 @@ MEDIA STYLES
 		.group-chat__para {
 			max-width: 38rem;
 		}
+
+	.pendulum--1 {
+		margin-top: 5rem;
+	}
+
+	.images {
+		max-width: 69.375rem;
+	}
 }
