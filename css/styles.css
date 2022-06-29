@@ -177,6 +177,29 @@ GROUP STYLES
 }
 
 /*************************************  
+PENDULUM STYLES  
+**************************************/
+.pendulum {
+	width: 56px;
+	margin: auto;
+}
+	.pendulum__line {
+		width: 1px;
+		height: 84px;
+		background-color: #D8D8D8;
+		margin: auto;
+	}
+	.pendulum__circle {
+		width: 56px;
+		height: 56px;
+		border-radius: 50%;
+		border: 1px solid #D8D8D8;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+/*************************************  
 MEDIA STYLES  
 **************************************/
 @media (min-width: 768px) { 
