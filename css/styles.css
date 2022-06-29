@@ -44,16 +44,23 @@ footer h2 {
 /*************************************  
 BASE STYLES  
 **************************************/
+html {
+	overflow-x: hidden;
+}
+
 body {
 	display: block;
 	color: #87879D;
 	background-color: #fafafa;
+	overflow-x: hidden;
     font-family: 'Red Hat Display', sans-serif;
 }
 
 h1 {
 	font-size: 2.5rem;
 	line-height: 2.75rem;
+	margin-top: 3rem;
+	margin-bottom: 1.5rem;
 }
 
 h2 {
@@ -83,6 +90,14 @@ footer {
 	}
 
 /*************************************  
+CONTAINER STYLES  
+**************************************/
+.container {
+	max-width: 1440px;
+	margin: auto;
+}
+
+/*************************************  
 BUTTON STYLES  
 **************************************/
 .btn {
@@ -96,6 +111,7 @@ BUTTON STYLES
 
 .btn--blue {
 	background-color: #4D96A9;
+	margin-bottom: 1rem;
 }
 .btn--blue:hover {
 	background: #71C0D4;
@@ -110,6 +126,7 @@ BUTTON STYLES
 
 .btn--what {
 	width: 8.75rem;
+	margin-bottom: 1rem;
 }
 
 	.btn span {
@@ -126,6 +143,37 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+/*************************************  
+GROUP STYLES  
+**************************************/
+.group {
+	overflow-x: hidden;
+}
+	.group__full {
+		width: 110%;
+		margin: auto;
+		position: relative;
+		left: -5%;
+	}
+	.group__left,
+	.group__right {
+		display: none;
+	}
+	
+
+.group-chat__para {
+	width: 90%;
+	max-width: 22rem;
+	margin: 0 auto 1.8rem;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
 }
 
 /*************************************  
@@ -149,16 +197,59 @@ MEDIA STYLES
 	header {
 		height: 15.625rem;
 	}
+
+	.group {
+		max-width: 50rem;
+	}
+		.group__full {
+			width: 107%;
+			left: -3.5%;
+			display: block;
+		}
+		.group-chat__para {
+			max-width: 32rem;
+		}
+
+	.buttons {
+		width: 25rem;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
 }
 
-
-@media (min-width: 1110px) { 
+@media (min-width: 1250px) { 
 	h1 {
 		font-size: 4rem;
 		line-height: 4rem;
+		margin-bottom: 2rem;
 	}
 	
 	header {
 		height: 18.75rem;
 	}
+
+	.group {
+		display: flex;
+		max-width: 1440px;
+		justify-content: space-around;
+	}
+		.group__full {
+			display: none;
+		}
+		.group__left,
+		.group__right {
+			display: inherit;
+			position: relative;
+		}
+		.group__left{
+			left: -2.6%;
+			margin-bottom: 3rem;
+		}
+		.group__right {
+			right: -2.6%;
+			margin-top: 3rem;
+		}
+		.group-chat__para {
+			max-width: 38rem;
+		}
 }
