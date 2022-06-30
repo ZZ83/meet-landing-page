@@ -31,6 +31,7 @@ h2 {
 h1,
 h2,
 p,
+b,
 span {
 	text-align: center;
 }
@@ -73,9 +74,11 @@ p {
 }
 
 b {
+	display: block;
 	letter-spacing: 0.25rem;
 	color: #4D96A9;
 	text-transform: uppercase;
+	margin-top: 2rem;
 }
 
 a {
@@ -94,6 +97,11 @@ CONTAINER STYLES
 **************************************/
 .container {
 	max-width: 1440px;
+	margin: auto;
+}
+
+.wrapper {
+	width: 90%;
 	margin: auto;
 }
 
@@ -207,7 +215,6 @@ PENDULUM STYLES
 IMAGES STYLES  
 **************************************/
 .images {
-	width: 90%;
 	margin-top: 5rem;
 	display: flex;
 	justify-content: space-between;
@@ -219,6 +226,18 @@ IMAGES STYLES
 	width: 47%;
 	border-radius: 12px;
 	margin-bottom: 1.5rem;
+}
+
+/*************************************  
+SMART STYLES  
+**************************************/
+.smart__heading {
+	max-width: 20rem;
+	margin: 1.8rem auto;
+}
+.smart__para {
+	max-width: 42rem;
+	margin: 0 auto 3rem;
 }
 
 /*************************************  
@@ -268,6 +287,10 @@ MEDIA STYLES
 	.images img {
 		width: 23%;
 	}
+
+	.smart__heading {
+		max-width: 26rem;
+	}
 }
 
 @media (min-width: 1250px) { 
@@ -312,5 +335,10 @@ MEDIA STYLES
 
 	.images {
 		max-width: 69.375rem;
+		margin-bottom: 4rem;
+	}
+
+	.smart__para {
+		max-width: 32rem;
 	}
 }
