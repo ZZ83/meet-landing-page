@@ -92,7 +92,6 @@ footer {
 	background-image: url(../assets/mobile/image-footer.jpg);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	background-blend-mode: soft-light;
 }
 	footer p {
 		font-size: 1.125rem;
@@ -109,6 +108,10 @@ CONTAINER STYLES
 .wrapper {
 	width: 90%;
 	margin: auto;
+}
+
+.overlay {
+	background-color: rgba(77, 150, 168, 0.8);
 }
 
 /*************************************  
@@ -271,6 +274,13 @@ FOOTER STYLES
 		max-width: 35rem;
 		margin-bottom: 2rem;
 	}
+
+/*************************************  
+OVERLAY STYLES  
+**************************************/
+.overlay {
+	background-color: rgba(77, 150, 168, 0.9);
+}
 	
 /*************************************  
 MEDIA STYLES  
