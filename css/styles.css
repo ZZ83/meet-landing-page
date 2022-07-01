@@ -130,12 +130,18 @@ BUTTON STYLES
 	background-color: #4D96A9;
 	margin-bottom: 1rem;
 }
+.btn--blue span {
+	color: #8FE3F9;
+}
 .btn--blue:hover {
 	background: #71C0D4;
 }
 
 .btn--purple {
 	background-color: #855FB1;
+}
+.btn--purple span {
+	color: #D9B8FF;
 }
 .btn--purple:hover {
 	background: #B18BDD;
@@ -148,7 +154,6 @@ BUTTON STYLES
 
 	.btn span {
 		padding-left: 0.3rem;
-		color: rgba(250, 250, 250, 0.5);
 	}
 
 /*************************************  
