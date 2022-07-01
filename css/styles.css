@@ -86,7 +86,13 @@ a {
 }
 
 footer {
+	max-width: 1440px;
+	margin: 0 auto;
 	background-color: #4D96A9;
+	background-image: url(../assets/mobile/image-footer.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-blend-mode: soft-light;
 }
 	footer p {
 		font-size: 1.125rem;
@@ -205,10 +211,17 @@ PENDULUM STYLES
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		background-color: #FAFAFA;
 	}
 
 .pendulum--1 {
 	margin-top: 3rem;
+}
+
+.pendulum--2 {
+	margin-bottom: -1.8rem;
+	position: relative;
+	z-index: 1;
 }
 
 /*************************************  
@@ -241,8 +254,33 @@ SMART STYLES
 }
 
 /*************************************  
+FOOTER STYLES  
+**************************************/
+.footer {
+	height: 25.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+	.footer__heading {
+		margin-top: 1.5rem;
+		margin-bottom: 0;
+	}
+	.footer__para {
+		max-width: 35rem;
+		margin-bottom: 2rem;
+	}
+	
+/*************************************  
 MEDIA STYLES  
 **************************************/
+@media (min-width: 480px) { 
+	footer {
+		background-image: url(../assets/tablet/image-footer.jpg);
+	}
+}
+
 @media (min-width: 768px) { 
 	h1 {
 		font-size: 3rem;
@@ -290,6 +328,12 @@ MEDIA STYLES
 
 	.smart__heading {
 		max-width: 26rem;
+	}
+}
+
+@media (min-width: 1000px) { 
+	footer {
+		background-image: url(../assets/desktop/image-footer.jpg);
 	}
 }
 
@@ -341,4 +385,21 @@ MEDIA STYLES
 	.smart__para {
 		max-width: 32rem;
 	}
+
+	.footer {
+		position: relative;
+		max-width: 1110px;
+		flex-direction: row;
+		justify-content: space-between;
+		height: 19.25rem;
+	}
+		.footer__heading,
+		.footer__para {
+			margin: 0;
+			text-align: left;
+		}
+		.footer__para {
+			margin: 0;
+			max-width: 22rem;
+		}
 }
